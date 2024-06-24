@@ -1,0 +1,41 @@
+doctype html
+html 
+    head 
+        title Dance Academy
+    style 
+        include ../static/style.css
+    body 
+        nav#navbar.top 
+            ul 
+                div 
+                    img(src="../static/logo.jpg", alt="")
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class info]
+                li #[a(href="/") Contact Us]
+        section#introSection 
+                div.tag#tag1 Welcome to the world's best Dance Academy 
+                div.tag#tag2 Eat Sleep Dance Repeat!
+        section#missionSection
+            h1  Our mission
+            div.mission 
+                div.card
+                    img.dance(src="../static/dance1.avif", alt="")
+                    h2  Artistic Excellence and Innovation
+                div.card
+                    img.dance(src="../static/dance2.jpg", alt="")
+                    h2  Community Engagement and Education
+                div.card
+                    img.dance(src="../static/dance3.jpg", alt="")
+                    h2  Cultural Diversity and Inclusion
+        section#sponsorsSection 
+            h1 Our Sponsors 
+            div.sponsor
+                    img#image1.image(src="../static/sponsor-1.jpg", alt="")
+                    img#image2.image(src="../static/sponsor-2.webp" alt="")
+                    img#image3.image(src="../static/sponsor-3.png" alt="")
+        footer#footer 
+            |Footer
+        script 
+            include ../static/index.js 
